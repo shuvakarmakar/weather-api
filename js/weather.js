@@ -13,7 +13,7 @@ function fetchWeather() {
     document.getElementById('weather-info').innerHTML = "";
 
     if (city) {
-        const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+        const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
         fetch(apiUrl)
             .then(response => {
